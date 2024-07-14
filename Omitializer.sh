@@ -60,7 +60,15 @@ if [ "$webdev" == "y" ]; then
   else
     echo -e "${GREEN}+ Using npm (already included with NodeJS)${WHITE}"
   fi
+  # install postman
+    echo -e "{${GREEN} + ${WHITE}} Do you want Postman?"
+    read -p "y/n: " postman
+    if [ $postman == "y" ]; then
+        echo -e "{${GREEN} + ${WHITE}} Installing Postman"
+        sudo snap install postman
+    fi
 fi
+
 
 # Install Docker
 echo -e "{${GREEN} + ${WHITE}} you want Docker?"
@@ -121,4 +129,16 @@ if [ $discord == "y" ]; then
     echo "{${GREEN} + ${WHITE}} Installing Discord"
     sudo snap install discord
 fi
+
+# install youtube-dl
+echo -e "{${GREEN} + ${WHITE}} Do you want youtube-dl?"
+read -p "y/n: " youtube_dl
+if [ $youtube_dl == "y" ]; then
+    echo -e "{${GREEN} + ${WHITE}} Installing youtube-dl"
+    sudo add-apt-repository ppa:tomtomtom/yt-dlp    
+    sudo apt update                                 
+    sudo apt install yt-dlp                        
+fi
+
+
 
