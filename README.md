@@ -27,4 +27,6 @@ also for 1337 students, I am thinkng of add X11 and installing the MiniLibx libr
 - Wine
 - Brave
 - Discord
+- Postman
+- youtube-dlp
 
