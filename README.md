@@ -3,8 +3,8 @@ This is a simple bash script that 'initializes' your clean Debian installation, 
 
 ## How to use
 You pretty much just run the bash script and everything is being taken care off
-``` bash
-    $bash omitializer.sh 
+``` sh
+    $ bash omitializer.sh 
 ```
 ### Notice
 This is a bash script that is tailored for YABOI, if you want to add or remove something feel free to do so.
